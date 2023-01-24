@@ -1,0 +1,16 @@
+<div class="header">
+  USER ID <input class="itext" type="number" min="1" (keydown.enter) ="myservice.setinput($event)">
+</div>
+<div class="maincontainer">
+  <mat-sidenav-container class="container">
+    <mat-sidenav #sidenav mode="side" opened class="sidenav">
+      <button  mat-button color="primary" routerLink="/post">Posts</button><br/>
+      <button  mat-button color="primary" routerLink="/user">Users</button><br/>
+      <button  mat-button color="primary" routerLink="/comment">Comments</button><br/>
+      <button  mat-button color="primary" routerLink="/photo">Photos</button><br/>
+      <button  mat-button color="primary" routerLink="/album">Albums</button><br/>
+      <button  mat-button color="primary" routerLink="/todo">Todos</button>
+    </mat-sidenav>
+    <mat-sidenav-content class="content">
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>

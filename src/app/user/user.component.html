@@ -1,0 +1,15 @@
+<body>
+  <h3 class="">USERS</h3>
+    <div class="container">
+      <div class="card" *ngFor="let item of myservice.httpdata">
+        <div class="imgbox">
+          <!--extracting image named gfg.jpg from images folder-->
+          <img src="assets/image.png">
+        <p><b>ID:</b> {{item.id}}</p>
+        <p><b>NAME:</b> {{item.name}}</p>
+        <p><b>USERNAME:</b> {{item.username}}</p>
+        <p><b>EMAIL:</b> {{item.email}}</p>  
+      </div>
+      </div>
+      </div>
+    </body>

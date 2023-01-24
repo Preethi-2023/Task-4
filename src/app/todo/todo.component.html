@@ -1,0 +1,54 @@
+<body>
+  <h3 class="">TODOS</h3>
+  <div class="container">
+    <div class="card" *ngFor="let item of myservice.httpdata">
+      <div class="imgbox">
+        <!--extracting image named gfg.jpg from images folder-->
+        <img src="assets/image.png">
+      <p><b>USER ID:</b> {{item.id}}</p>
+      <p><b>TITLE:</b> {{item.title}}</p>
+      <p><b>COMPLETED:</b> {{item.completed}}</p>  
+    </div>
+    </div>
+    </div>
+  </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div *ngFor="let item of httpdata">
+    <p>{{item.id}} {{item.title}}</p>
+    <p>COMPLETED: {{item.completed}}</p>  
+  </div> -->
+
+  <!-- <div class="container">
+    <table>
+      <thead class="itable">
+          <tr>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Completed</th>
+          </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of httpdata">
+          <td>{{ item.id }}</td>
+          <td>{{ item.title }}</td>
+          <td>{{ item.completed }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+   -->
